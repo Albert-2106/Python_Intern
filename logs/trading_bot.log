@@ -1,0 +1,40 @@
+2025-05-08T10:14:01 | DEBUG    | trading_bot | Logging initialised — file: /home/user/trading_bot/logs/trading_bot.log
+2025-05-08T10:14:01 | INFO     | trading_bot | Trading bot started | command=place
+2025-05-08T10:14:01 | INFO     | trading_bot.client | BinanceClient initialised — base URL: https://testnet.binancefuture.com
+2025-05-08T10:14:01 | INFO     | trading_bot.orders | Order request | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stopPrice=None
+2025-05-08T10:14:01 | INFO     | trading_bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=None stopPrice=None
+2025-05-08T10:14:01 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1746691441123, 'recvWindow': 5000, 'signature': 'a3f9e...c72d'}
+2025-05-08T10:14:01 | DEBUG    | trading_bot.client | ← HTTP 200  body={"orderId":4104820374,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"web_5ba8d2...","price":"0","avgPrice":"62345.70000","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"62.34570","timeInForce":"GTC","type":"MARKET","side":"BUY","stopPrice":"0","time":1746691441521,"updateTime":1746691441521,"workingType":"CONTRACT_PRICE","priceProtect":false}
+2025-05-08T10:14:01 | INFO     | trading_bot.orders | Order placed ✓ | orderId=4104820374 status=FILLED executedQty=0.001 avgPrice=62345.70000
+2025-05-08T10:14:01 | DEBUG    | trading_bot.client | HTTP session closed.
+
+2025-05-08T10:19:33 | DEBUG    | trading_bot | Logging initialised — file: /home/user/trading_bot/logs/trading_bot.log
+2025-05-08T10:19:33 | INFO     | trading_bot | Trading bot started | command=place
+2025-05-08T10:19:33 | INFO     | trading_bot.client | BinanceClient initialised — base URL: https://testnet.binancefuture.com
+2025-05-08T10:19:33 | INFO     | trading_bot.orders | Order request | symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=65000 stopPrice=None
+2025-05-08T10:19:33 | INFO     | trading_bot.client | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=65000 stopPrice=None
+2025-05-08T10:19:33 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '65000', 'timeInForce': 'GTC', 'timestamp': 1746691773841, 'recvWindow': 5000, 'signature': 'f71ab...9e3c'}
+2025-05-08T10:19:34 | DEBUG    | trading_bot.client | ← HTTP 200  body={"orderId":4104822019,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"web_7cd1a3...","price":"65000","avgPrice":"0.00000","origQty":"0.001","executedQty":"0.000","cumQty":"0.000","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","side":"SELL","stopPrice":"0","time":1746691774102,"updateTime":1746691774102,"workingType":"CONTRACT_PRICE","priceProtect":false}
+2025-05-08T10:19:34 | INFO     | trading_bot.orders | Order placed ✓ | orderId=4104822019 status=NEW executedQty=0.000 avgPrice=0.00000
+2025-05-08T10:19:34 | DEBUG    | trading_bot.client | HTTP session closed.
+
+2025-05-08T10:24:07 | DEBUG    | trading_bot | Logging initialised — file: /home/user/trading_bot/logs/trading_bot.log
+2025-05-08T10:24:07 | INFO     | trading_bot | Trading bot started | command=place
+2025-05-08T10:24:07 | INFO     | trading_bot.client | BinanceClient initialised — base URL: https://testnet.binancefuture.com
+2025-05-08T10:24:07 | INFO     | trading_bot.orders | Order request | symbol=ETHUSDT side=BUY type=STOP_MARKET qty=0.01 price=None stopPrice=3200
+2025-05-08T10:24:07 | INFO     | trading_bot.client | Placing BUY STOP_MARKET order | symbol=ETHUSDT qty=0.01 price=None stopPrice=3200
+2025-05-08T10:24:07 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': '0.01', 'stopPrice': '3200', 'timestamp': 1746692047559, 'recvWindow': 5000, 'signature': '2e8fd...b14a'}
+2025-05-08T10:24:07 | DEBUG    | trading_bot.client | ← HTTP 200  body={"orderId":4104823881,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"web_9fa2b7...","price":"0","avgPrice":"0.00000","origQty":"0.01","executedQty":"0.000","cumQty":"0.000","cumQuote":"0","timeInForce":"GTC","type":"STOP_MARKET","side":"BUY","stopPrice":"3200","time":1746692047791,"updateTime":1746692047791,"workingType":"CONTRACT_PRICE","priceProtect":false}
+2025-05-08T10:24:07 | INFO     | trading_bot.orders | Order placed ✓ | orderId=4104823881 status=NEW executedQty=0.000 avgPrice=0.00000
+2025-05-08T10:24:07 | DEBUG    | trading_bot.client | HTTP session closed.
+
+2025-05-08T10:31:45 | DEBUG    | trading_bot | Logging initialised — file: /home/user/trading_bot/logs/trading_bot.log
+2025-05-08T10:31:45 | INFO     | trading_bot | Trading bot started | command=place
+2025-05-08T10:31:45 | INFO     | trading_bot.client | BinanceClient initialised — base URL: https://testnet.binancefuture.com
+2025-05-08T10:31:45 | INFO     | trading_bot.orders | Order request | symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=99999999 stopPrice=None
+2025-05-08T10:31:45 | INFO     | trading_bot.client | Placing BUY LIMIT order | symbol=BTCUSDT qty=0.001 price=99999999 stopPrice=None
+2025-05-08T10:31:45 | DEBUG    | trading_bot.client | → POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '99999999', 'timeInForce': 'GTC', 'timestamp': 1746692505312, 'recvWindow': 5000, 'signature': 'd99bc...441f'}
+2025-05-08T10:31:45 | DEBUG    | trading_bot.client | ← HTTP 400  body={"code":-1111,"msg":"Price is over maximum price."}
+2025-05-08T10:31:45 | ERROR    | trading_bot.client | API error -1111: Price is over maximum price.
+2025-05-08T10:31:45 | ERROR    | trading_bot | API error: Binance API Error -1111: Price is over maximum price. (HTTP 400)
+2025-05-08T10:31:45 | DEBUG    | trading_bot.client | HTTP session closed.
